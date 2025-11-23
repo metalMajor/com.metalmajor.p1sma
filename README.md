@@ -1,6 +1,12 @@
 # Overview
 
-Converts P1 measurements and acts as an SMA Energy Meter to an SMA Inverter, for example the STP 6.0.
+Homey App to publish the values gotten from a Homewizard P1 dongle as a virtual SMA Energy Meter.
+
+The purpose is only to improve the webpages of the SMA Inverter:
+
+![System overview](/docs/images/system-overview-improvement.png)
+
+*The author is not responsible for anything that can go wrong with any of your devices, so use at your own risk, so if there is any doubt don't use it and buy a real SMA Energy Meter.*
 
 # Install on Homey Pro
 
@@ -25,7 +31,9 @@ Once the virtual meter is added, it will broadcast information packets using UDP
 
 ## Ethernet Cable
 
-The inverter needs to be connected to your network using one of the 2 ethernet interfaces. The wifi connection won't be enough, it really needs the ethernet, which they rebranded to "speedwire", yay marketing department! I used the one closed to the wall-side. It will take an IP address using DHCP, so no additional config is required, just plug it to your router. Because it uses multicast, you don't even need to know the ip address. 
+The inverter needs to be connected to your network using one of the 2 ethernet interfaces. The wifi connection won't be enough, it really needs the ethernet, which they rebranded to "speedwire", yay marketing department! 
+
+I used the one closest to the wall-side. It will take an IP address using DHCP, so no additional config is required, just plug it to your router. Because it uses multicast, you don't even need to know the ip address. 
 
 ## Configuration
 
