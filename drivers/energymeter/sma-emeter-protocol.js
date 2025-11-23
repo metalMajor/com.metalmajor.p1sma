@@ -69,7 +69,7 @@ class EmeterPacketizer {
       // ["l1_enrg_exp_a", "1.30.8", bytesFromHex("001E0800"), 3600000.0, Buffer.alloc(0)],
       ["amp_l1", "1.31.4", bytesFromHex("001F0400"), 1000.0, Buffer.alloc(0)],
       ["volts_l1", "1.32.4", bytesFromHex("00200400"), 1000.0, Buffer.alloc(0)],
-//      ["fact_l1", "1.33.4", bytesFromHex("00210400"), 1000.0, Buffer.alloc(0)],
+      //      ["fact_l1", "1.33.4", bytesFromHex("00210400"), 1000.0, Buffer.alloc(0)],
 
       ["l2_pwr_imp", "1.41.4", bytesFromHex("00290400"), 10.0, Buffer.alloc(0)],
       ["l2_enrg_imp", "1.41.8", bytesFromHex("00290800"), 3600000.0, Buffer.alloc(0)],
@@ -110,8 +110,8 @@ class EmeterPacketizer {
       const key = v[0];
       const len = v[2][2];
       if (Object.prototype.hasOwnProperty.call(measurements, key)) {
-        console.log(`Updating ${key} to ${measurements[key]}`);
-        console.log(`  Multiplier: ${v[3]}, Length: ${len}`);
+        //console.log(`Updating ${key} to ${measurements[key]}`);
+        //console.log(`  Multiplier: ${v[3]}, Length: ${len}`);
         v[4] = this.num2bytes(measurements[key] * v[3], len);
       } else {
         v[4] = this.num2bytes(0 * v[3], len);
@@ -156,6 +156,5 @@ class EmeterPacketizer {
     }
   }
 }
-
 
 module.exports = { EmeterPacketizer, bytesFromHex, bytesSet, bytesAdd };

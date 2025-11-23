@@ -32,6 +32,7 @@
   "drivers": [
     {
       "name": {
+        "nl": "Virtuele SMA Energymeter",
         "en": "Virtual SMA Energy Meter"
       },
       "class": "other",
@@ -68,10 +69,12 @@
           "id": "serial_number",
           "type": "number",
           "label": {
+            "nl": "Serienummer",
             "en": "Serial Number"
           },
-          "value": 98765432,
+          "value": 100,
           "hint": {
+            "nl": "Serienummer dat je wilt gebruiken voor de virtuele SMA Energy Meter",
             "en": "Serial number you want to use for the virtual SMA Energy Meter"
           }
         }
