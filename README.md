@@ -55,7 +55,20 @@ You should also see the serial number under the "Meter on speedwire". So you can
 
 ## The P1 Homewizard does not give me this info:
 
-* 
+* Displacement power factor
+* Apparent power
+* EEI displacement power factor
+* Reactive power grid feeding
+* Apparent power L1
+* Apparent power L2
+* Apparent power L3
+* Reactive power grid feeding phase L1
+* Reactive power grid feeding phase L2
+* Reactive power grid feeding phase L2
+
+**If anyone knows what values I should use for these, please let me know by opening an issue here**
+
+Right now, I'm just not sending them in the UDP packet, so that I don't send any wrong values either.
 
 # Thanks
 
