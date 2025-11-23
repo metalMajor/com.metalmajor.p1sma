@@ -1,0 +1,31 @@
+{
+  "id": "com.metalmajor.p1sma",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "P1SMA"
+  },
+  "description": {
+    "en": "Converts P1 measurements and acts as an SMA Energy Meter"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [
+    "homey:manager:api",
+    "homey:app:com.homewizard"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Tom Deblauwe",
+    "email": "deblauwetom@gmail.com"
+  }
+}

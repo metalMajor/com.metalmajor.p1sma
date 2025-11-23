@@ -1,0 +1,9 @@
+[
+  {
+    "id": "serial_number",
+    "type": "number",
+    "label": { "en": "Serial Number" },
+    "value": 98765432,
+    "hint": { "en": "Serial number you want to use for the virtual SMA Energy Meter" }
+  }
+]
